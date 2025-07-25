@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chameleon Cash (CHCX) - Adaptive Crypto Intelligence</title>
+    <title>Disclaimer - Chameleon Cash (CHCX)</title>
+    <meta name="description" content="Important financial disclaimer for Chameleon Cash (CHCX) - Entertainment token only, not financial advice">
     <style>
         * {
             margin: 0;
@@ -121,393 +122,179 @@
 
         /* Main Content */
         .main-content {
-            margin-top: 120px;
-            padding: 2rem;
-            max-width: 1400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-section {
-            text-align: center;
-            margin-bottom: 3rem;
-            background: linear-gradient(45deg, rgba(34, 197, 94, 0.1), rgba(168, 85, 247, 0.1));
-            border: 2px solid #22c55e;
-            border-radius: 25px;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .hero-chameleon {
-            position: relative;
-            z-index: 1;
+            padding: 120px 2rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .page-title {
-            font-size: 4rem;
+            font-size: 3.5rem;
+            font-weight: bold;
             margin-bottom: 1rem;
             color: #22c55e;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            font-weight: 900;
-            position: relative;
-            z-index: 3;
-        }
-        
-        /* Additional fallback */
-        @supports not (background-clip: text) {
-            .page-title {
-                color: #22c55e;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            }
-        }
-
-        @keyframes titleShift {
-            0% { background: linear-gradient(45deg, #22c55e, #a855f7, #eab308, #3b82f6); }
-            50% { background: linear-gradient(45deg, #3b82f6, #eab308, #a855f7, #22c55e); }
-            100% { background: linear-gradient(45deg, #22c55e, #a855f7, #eab308, #3b82f6); }
-        }
-
-        .hero-chameleon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(45deg, #22c55e, #16a34a);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: 900;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            border: 3px solid #a855f7;
-            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.4);
-            margin: 0 auto 1rem;
-            position: relative;
-            animation: heroColorShift 12s ease infinite;
-        }
-
-        @keyframes heroColorShift {
-            0% { background: linear-gradient(45deg, #22c55e, #16a34a); border-color: #a855f7; }
-            20% { background: linear-gradient(45deg, #3b82f6, #1d4ed8); border-color: #eab308; }
-            40% { background: linear-gradient(45deg, #a855f7, #7c3aed); border-color: #ef4444; }
-            60% { background: linear-gradient(45deg, #eab308, #ca8a04); border-color: #22c55e; }
-            80% { background: linear-gradient(45deg, #ef4444, #dc2626); border-color: #3b82f6; }
-            100% { background: linear-gradient(45deg, #22c55e, #16a34a); border-color: #a855f7; }
-        }
-
-        .hero-chameleon::after {
-            content: '🦎';
-            position: absolute;
-            right: -8px;
-            top: -5px;
-            font-size: 24px;
-            z-index: 2;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-
-        .chameleon-quote {
-            font-size: 1.3rem;
-            color: #a855f7;
-            margin-bottom: 1rem;
-            font-style: italic;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .page-subtitle {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-bottom: 2rem;
-            color: #E8F5E8;
-        }
-
-        /* News Grid */
-        .news-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        /* Main News Feed */
-        .main-news-feed {
-            background: rgba(0, 0, 0, 0.8);
-            border: 2px solid #22c55e;
-            border-radius: 20px;
-            padding: 2rem;
-            backdrop-filter: blur(10px);
-        }
-
-        .section-title {
-            font-size: 1.6rem;
-            color: #22c55e;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            border-bottom: 2px solid #22c55e;
-            padding-bottom: 0.5rem;
-        }
-
-        .news-item {
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(168, 85, 247, 0.05));
-            border-radius: 15px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-left: 5px solid #a855f7;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .news-item:hover {
-            transform: translateX(10px) scale(1.02);
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(168, 85, 247, 0.1));
-            border-left-color: #22c55e;
-            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
-        }
-
-        .news-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 0.8rem;
-        }
-
-        .news-title {
-            font-weight: bold;
-            color: #a855f7;
-            font-size: 1.1rem;
-            line-height: 1.3;
-            margin-right: 1rem;
-        }
-
-        .news-time {
-            font-size: 0.8rem;
-            opacity: 0.7;
-            color: #22c55e;
-            font-weight: bold;
-            white-space: nowrap;
-        }
-
-        .news-content {
-            line-height: 1.6;
-            margin-bottom: 0.8rem;
-            color: #E8F5E8;
-        }
-
-        .news-source {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .source-name {
-            font-size: 0.9rem;
-            color: #22c55e;
-            font-weight: bold;
-        }
-
-        .chameleon-wisdom {
-            font-size: 0.8rem;
-            color: #a855f7;
-            font-style: italic;
-            opacity: 0.8;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .sidebar-section {
-            background: rgba(0, 0, 0, 0.8);
-            border: 2px solid #a855f7;
-            border-radius: 15px;
-            padding: 1.5rem;
-            backdrop-filter: blur(10px);
-        }
-
-        /* Chameleon Token Info */
-        .chameleon-token-info {
             text-align: center;
-            background: linear-gradient(45deg, rgba(34, 197, 94, 0.1), rgba(168, 85, 247, 0.1));
-        }
-
-        .token-logo {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(45deg, #22c55e, #16a34a);
-            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
-            font-weight: 900;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin: 0 auto 1rem;
-            border: 3px solid #a855f7;
-            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.4);
-            position: relative;
-            animation: tokenColorShift 10s ease infinite;
-        }
-
-        @keyframes tokenColorShift {
-            0% { background: linear-gradient(45deg, #22c55e, #16a34a); border-color: #a855f7; }
-            33% { background: linear-gradient(45deg, #3b82f6, #1d4ed8); border-color: #eab308; }
-            66% { background: linear-gradient(45deg, #a855f7, #7c3aed); border-color: #ef4444; }
-            100% { background: linear-gradient(45deg, #22c55e, #16a34a); border-color: #a855f7; }
-        }
-
-        .token-logo::after {
-            content: '🦎';
-            position: absolute;
-            right: -12px;
-            top: -8px;
-            font-size: 32px;
-            z-index: 2;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-
-        .token-price {
-            font-size: 1.4rem;
-            color: #a855f7;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        .price-change {
-            font-size: 0.9rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: #22c55e;
-        }
-
-        /* Market Stats */
-        .market-stats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
             gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .stat-item {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 1rem;
-            border-radius: 10px;
-            border: 1px solid #22c55e;
-        }
-
-        .stat-number {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #a855f7;
-        }
-
-        .stat-label {
-            font-size: 0.8rem;
-            opacity: 0.8;
-            margin-top: 0.3rem;
-        }
-
-        /* Chameleon Quotes */
-        .chameleon-quotes {
-            background: linear-gradient(45deg, rgba(168, 85, 247, 0.1), rgba(34, 197, 94, 0.05));
-        }
-
-        .quote-item {
-            background: rgba(0, 0, 0, 0.3);
-            border-left: 4px solid #a855f7;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-            font-style: italic;
-            color: #a855f7;
-        }
-
-        .quote-author {
-            text-align: right;
-            margin-top: 0.5rem;
-            font-size: 0.8rem;
-            color: #22c55e;
-            font-weight: bold;
-        }
-
-        /* Refresh Button */
-        .refresh-btn {
-            background: linear-gradient(45deg, #a855f7, #7c3aed);
-            color: white;
-            border: none;
-            padding: 0.6rem 1.2rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-left: 1rem;
-            box-shadow: 0 5px 15px rgba(168, 85, 247, 0.3);
-        }
-
-        .refresh-btn:hover {
-            transform: scale(1.05) translateY(-2px);
-            box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
-        }
-
-        .refresh-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        /* Loading and Messages */
-        .loading-indicator {
-            text-align: center;
-            padding: 3rem;
-            color: #a855f7;
             animation: pulse 2s ease-in-out infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
 
-        .message-popup {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 1rem 2rem;
-            border-radius: 10px;
-            color: white;
+        .page-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            color: #a855f7;
             font-weight: bold;
-            z-index: 10001;
-            opacity: 0;
-            transform: translateX(100px);
-            transition: all 0.3s ease;
         }
 
-        .message-popup.success {
+        .disclaimer-content {
+            background: rgba(0, 0, 0, 0.8);
+            border: 3px solid #22c55e;
+            border-radius: 25px;
+            padding: 2rem;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(34, 197, 94, 0.3);
+            line-height: 1.8;
+        }
+
+        .disclaimer-content h2 {
+            color: #22c55e;
+            margin: 30px 0 15px 0;
+            font-size: 1.8em;
+            border-bottom: 2px solid #22c55e;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .disclaimer-content h3 {
+            color: #a855f7;
+            margin: 25px 0 10px 0;
+            font-size: 1.3em;
+        }
+
+        .disclaimer-content p {
+            margin-bottom: 15px;
+            color: #E8F5E8;
+        }
+
+        .disclaimer-content ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        .disclaimer-content li {
+            margin-bottom: 8px;
+            color: #E8F5E8;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.3), rgba(255, 102, 153, 0.2));
+            border: 2px solid #ef4444;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .adaptive-box {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.3), rgba(102, 255, 153, 0.2));
+            border: 2px solid #22c55e;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .evolution-box {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(199, 125, 255, 0.2));
+            border: 2px solid #a855f7;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .warning-box::before, .adaptive-box::before, .evolution-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .warning-box strong {
+            color: #ffff00;
+            font-size: 1.1em;
+        }
+
+        .adaptive-box strong {
+            color: #22c55e;
+            font-size: 1.1em;
+        }
+
+        .evolution-box strong {
+            color: #a855f7;
+            font-size: 1.1em;
+        }
+
+        .back-button {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .back-btn {
             background: linear-gradient(45deg, #22c55e, #16a34a);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
         }
 
-        .message-popup.info {
-            background: linear-gradient(45deg, #a855f7, #7c3aed);
+        .back-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
         }
 
-        .message-popup.show {
-            opacity: 1;
-            transform: translateX(0);
+        .back-btn:hover::before {
+            left: 100%;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(34, 197, 94, 0.5);
         }
 
         /* Footer */
@@ -517,24 +304,6 @@
             padding: 2rem;
             margin-top: 3rem;
             text-align: center;
-        }
-
-        .disclaimer {
-            background: rgba(168, 85, 247, 0.15);
-            border: 2px solid #a855f7;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: #a855f7;
-            font-weight: bold;
-            font-size: 1rem;
-        }
-
-        .footer-quote {
-            color: #22c55e;
-            font-style: italic;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
         }
 
         .footer-links {
@@ -556,38 +325,68 @@
             color: #22c55e;
         }
 
+        .disclaimer {
+            background: rgba(168, 85, 247, 0.15);
+            border: 2px solid #a855f7;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #a855f7;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .copyright {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .community-message {
+            color: #22c55e;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
-            .news-grid {
-                grid-template-columns: 1fr;
-            }
-            
             .page-title {
-                font-size: 2.2rem;
-            }
-            
-            .market-stats {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-links {
+                font-size: 2.5rem;
+                flex-direction: column;
                 gap: 0.5rem;
             }
-            
-            .nav-links a {
-                padding: 0.4rem 0.6rem;
-                font-size: 0.8rem;
+
+            .disclaimer-content {
+                padding: 1.5rem;
+            }
+
+            .main-content {
+                padding: 180px 1rem 1rem;
             }
 
             .footer-links {
                 flex-direction: column;
                 gap: 0.5rem;
             }
+
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .main-content {
+                padding-top: 200px;
+            }
         }
 
-        /* Animation for news items */
-        @keyframes fadeInNews {
-            from { opacity: 0; transform: translateY(20px); }
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
@@ -601,135 +400,201 @@
                 CHAMELEON CASH
             </div>
             <div class="nav-links">
-                <a href="#home" class="active">📈 LIVE FEED</a>
-                <a href="#chameleon-wisdom">🌈 CHAMELEON WISDOM</a>
-                <a href="#token-info">🪙 CHCX TOKEN</a>
-                <a href="disclaimer.html">⚠️ DISCLAIMER</a>
+                <a href="index.html">📈 LIVE FEED</a>
+                <a href="index.html#chameleon-wisdom">🌈 CHAMELEON WISDOM</a>
+                <a href="https://suivision.xyz/coin/0x7f91d33e708122976580123b38259e8065d804db142c51579f4406ff1268af92::chcx::CHCX" target="_blank">🪙 CHCX TOKEN</a>
+                <a href="disclaimer.html" class="active">⚠️ DISCLAIMER</a>
             </div>
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
-        <!-- Hero Section -->
-        <section class="hero-section" id="home">
-            <div class="hero-content">
-                <div class="hero-chameleon">CHCX</div>
-                <h1 class="page-title">CHAMELEON CASH</h1>
-                <div class="chameleon-quote">"Adapt, Evolve, Thrive - Change is Opportunity"</div>
-                <p class="page-subtitle">Where Adaptation Meets Innovation - For Entertainment Only</p>
-                <div style="color: #22c55e; font-size: 14px; font-weight: bold; margin-top: 1rem;">🦎 Polygon Network • 🌈 Color-Shifting • 📊 Adaptive Intelligence</div>
-                <div style="color: #ef4444; font-size: 12px; font-weight: bold; margin-top: 0.5rem; background: rgba(239, 68, 68, 0.1); padding: 0.5rem; border-radius: 8px; border: 1px solid #ef4444;">
-                    ⚠️ ENTERTAINMENT ONLY - Not Financial Advice - High Risk of Total Loss
-                </div>
+    <div class="main-content">
+        <h1 class="page-title fade-in">
+            <div style="width: 80px; height: 80px; background: linear-gradient(45deg, #22c55e, #16a34a); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 900; color: white; border: 3px solid #a855f7; position: relative; animation: colorShift 8s ease infinite;">
+                CHCX
+                <span style="position: absolute; right: -12px; top: -8px; font-size: 24px;">🦎</span>
             </div>
-        </section>
+            Financial Disclaimer
+        </h1>
+        <p class="page-subtitle fade-in">🌈 Adaptive Intelligence Requires Adaptive Responsibility - Read Carefully</p>
 
-        <div class="news-grid">
-            <!-- Main News Feed -->
-            <section class="main-news-feed" id="adaptive-intelligence">
-                <h2 class="section-title">
-                    📡 ADAPTIVE CRYPTO INTELLIGENCE
-                    <button class="refresh-btn" onclick="refreshNews()">🌈 Refresh Feed</button>
-                </h2>
-                <div class="news-container" id="newsContainer">
-                    <!-- News items will be populated by JavaScript -->
-                </div>
-            </section>
+        <div class="disclaimer-content fade-in">
+            <div class="warning-box">
+                <strong>⚠️ CRITICAL ADAPTIVE INTELLIGENCE DISCLAIMER</strong><br>
+                <strong>CHAMELEON CASH (CHCX) - ENTERTAINMENT TOKEN ONLY</strong>
+            </div>
 
-            <!-- Sidebar -->
-            <aside class="sidebar">
-                <!-- Chameleon Token Info -->
-                <section class="sidebar-section chameleon-token-info" id="token-info">
-                    <h3 class="section-title" style="justify-content: center; color: #a855f7;">🪙 CHAMELEON CASH (CHCX)</h3>
-                    <div class="token-logo">CHCX</div>
-                    
-                    <!-- About Chameleon Cash -->
-                    <div style="background: rgba(34, 197, 94, 0.1); border: 1px solid #22c55e; border-radius: 10px; padding: 1rem; margin-bottom: 1rem; text-align: left;">
-                        <div style="font-size: 0.9rem; line-height: 1.5; color: #E8F5E8;">
-                            <strong style="color: #a855f7;">Chameleon Cash (CHCX)</strong> is the adaptive meme coin that changes with market conditions. Like a chameleon, it evolves and adapts to thrive in any environment, representing the power of flexibility and transformation.
-                        </div>
-                        <div style="color: #ef4444; font-size: 0.8rem; font-weight: bold; margin-top: 0.8rem; padding: 0.5rem; background: rgba(239, 68, 68, 0.1); border-radius: 6px; border: 1px solid #ef4444;">
-                            ⚠️ FOR ENTERTAINMENT ONLY - Not investment advice
-                        </div>
-                    </div>
-                    
-                    <div style="font-size: 0.9rem; margin-bottom: 1rem; color: #22c55e;">Polygon • Uniswap Listed</div>
-                    
-                    <div class="market-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">888B</div>
-                            <div class="stat-label">Total Supply</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">🌈</div>
-                            <div class="stat-label">Adaptive</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">🦎</div>
-                            <div class="stat-label">Evolution</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">🚀</div>
-                            <div class="stat-label">Transform</div>
-                        </div>
-                    </div>
-                    
-                    <a href="https://uniswap.org" target="_blank" style="display: inline-block; background: linear-gradient(45deg, #22c55e, #16a34a); color: white; padding: 1rem 2rem; border-radius: 25px; text-decoration: none; font-weight: bold; margin-top: 1rem; transition: transform 0.3s; font-size: 0.9rem;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                        💱 TRADE ON UNISWAP
-                    </a>
-                </section>
+            <h2>🪂 CHCX Airdrop Disclaimer</h2>
+            <div class="evolution-box">
+                <strong>🪂 CHAMELEON CASH AIRDROP DISCLAIMER</strong><br><br>
+                <strong>Chameleon Cash conducts token airdrops as part of its adaptive community evolution and entertainment outreach. By participating, you acknowledge:</strong>
+            </div>
+            <ul>
+                <li><strong>$CHCX tokens have NO financial value, NO utility promises, and NO expectation of profit</strong></li>
+                <li><strong>Airdrops are distributed freely with NO purchase, payment, or consideration required</strong></li>
+                <li>Participation is entirely voluntary and solely for entertainment and community adaptation</li>
+                <li>$CHCX is NOT an investment, security, or financial instrument of any kind</li>
+                <li>Tokens may become worthless, cease to exist, or "evolve" beyond recognition at any time</li>
+                <li>No guarantees are made regarding airdrop eligibility, timing, distribution amounts, or criteria</li>
+                <li>Chameleon Cash reserves the right to modify, pause, or terminate airdrops at any time</li>
+                <li>Airdrop mechanics may "adapt" and change based on community conditions</li>
+                <li>Participants must comply with their local laws and regulations</li>
+                <li>Airdrop participation does not create any ongoing relationship or obligations</li>
+            </ul>
+            <p><strong>🎭 For entertainment and community evolution only. 18+ only. Extreme risk of total loss.</strong></p>
 
-                <!-- Chameleon Wisdom -->
-                <section class="sidebar-section chameleon-quotes" id="chameleon-wisdom">
-                    <h3 class="section-title" style="color: #a855f7;">🌈 CHAMELEON'S MARKET WISDOM</h3>
-                    <div class="quote-item">
-                        "The species that survive are not the strongest, but the most adaptable to change."
-                        <div class="quote-author">- Evolution Principle</div>
-                    </div>
-                    <div class="quote-item">
-                        "Change is the only constant in crypto - embrace it, don't fight it."
-                        <div class="quote-author">- Chameleon Philosophy</div>
-                    </div>
-                    <div class="quote-item">
-                        "Like a chameleon, smart investors blend with market conditions."
-                        <div class="quote-author">- Adaptive Strategy</div>
-                    </div>
-                    <div class="quote-item">
-                        "Colors change, but the core remains strong - adapt your strategy, not your vision."
-                        <div class="quote-author">- Market Chameleon</div>
-                    </div>
-                </section>
+            <h2>🦎 Chameleon Cash Philosophy</h2>
+            <div class="adaptive-box">
+                <strong>🌈 ADAPTATION IS SURVIVAL - BUT NOT FINANCIAL ADVICE</strong><br><br>
+                <strong>Chameleon Cash (CHCX) embodies the principle that adaptation leads to survival. However, this philosophy applies to entertainment and community building, NOT financial investment.</strong>
+            </div>
+            <ul>
+                <li><strong>$CHCX tokens have NO inherent financial value or profit expectations</strong></li>
+                <li><strong>The "adaptive intelligence" is thematic entertainment, not investment strategy</strong></li>
+                <li>Color-shifting mechanics are visual metaphors for entertainment purposes only</li>
+                <li>$CHCX is NOT an investment vehicle, security, or financial instrument</li>
+                <li>Tokens may lose all value or cease to exist without notice</li>
+                <li>The "evolution" theme is for community engagement, not market promises</li>
+                <li>All adaptive intelligence content is for entertainment and educational purposes</li>
+                <li>No financial promises or guarantees are made about token performance</li>
+            </ul>
+            <p><strong>🎭 Pure entertainment token. 18+ only. Extreme risk of total loss.</strong></p>
 
-                <!-- Market Intelligence -->
-                <section class="sidebar-section">
-                    <h3 class="section-title" style="color: #22c55e;">📊 ADAPTIVE INTELLIGENCE</h3>
-                    <div style="background: rgba(34, 197, 94, 0.1); padding: 1rem; border-radius: 10px; border: 1px solid #22c55e;">
-                        <div style="font-weight: bold; color: #a855f7; margin-bottom: 0.5rem;">🎯 Today's Adaptation:</div>
-                        <div style="font-size: 0.9rem; line-height: 1.5;">
-                            • Market shifting to defensive positions<br>
-                            • Adaptive tokens gaining momentum<br>
-                            • Entertainment sector evolving<br>
-                            • Polygon ecosystem transforming
-                        </div>
-                    </div>
-                </section>
-            </aside>
+            <h2>🎨 Entertainment & Meme Purpose Only</h2>
+            <p>Chameleon Cash (CHCX) is a <strong>meme cryptocurrency created purely for entertainment, community building, and adaptive learning</strong>. This token serves:</p>
+            <ul>
+                <li>Entertainment value through adaptive "color-shifting" themes</li>
+                <li>Community engagement around adaptation and evolution concepts</li>
+                <li>Educational discussions about market psychology and adaptation</li>
+                <li>Social media engagement with chameleon-themed content</li>
+                <li>Interactive experiences related to adaptation and change</li>
+            </ul>
+            <p>CHCX is <strong>NOT designed as an investment vehicle</strong> and should never be purchased expecting profit.</p>
+
+            <h2>🚫 No Financial or Investment Advice</h2>
+            <p><strong>This website, adaptive intelligence feed, and all chameleon-themed content provide NO financial, investment, or trading advice.</strong></p>
+            <ul>
+                <li>We do not recommend buying, selling, holding, or trading CHCX tokens</li>
+                <li>All "adaptive intelligence" content is for entertainment and education only</li>
+                <li>Market analysis and news aggregation are for informational purposes only</li>
+                <li>No content should be interpreted as investment recommendations</li>
+                <li>Always consult qualified financial advisors before making investment decisions</li>
+                <li>The chameleon philosophy applies to life adaptation, not financial strategy</li>
+            </ul>
+
+            <h2>⚡ Extreme Risk Warning</h2>
+            <div class="warning-box">
+                <strong>MEME CRYPTOCURRENCIES CARRY EXTREME RISKS:</strong>
+            </div>
+            <ul>
+                <li><strong>Total Loss Guaranteed Possible:</strong> You may lose 100% of any money spent</li>
+                <li><strong>Extreme Volatility:</strong> Meme tokens experience massive, unpredictable price swings</li>
+                <li><strong>Zero Utility Promise:</strong> No guaranteed utility, purpose, or function</li>
+                <li><strong>Purely Speculative:</strong> Based entirely on community sentiment and social trends</li>
+                <li><strong>Market Manipulation Risk:</strong> Susceptible to pump-and-dump schemes</li>
+                <li><strong>Liquidity Risk:</strong> May become impossible to sell when desired</li>
+                <li><strong>Technology Risk:</strong> Smart contract vulnerabilities may exist</li>
+            </ul>
+
+            <h2>🌈 Adaptive Token Specific Risks</h2>
+            <p><strong>Additional risks specific to Chameleon Cash and adaptive meme tokens:</strong></p>
+            <div class="evolution-box">
+                <strong>🦎 EVOLUTION RISKS - ADAPTATION CAN MEAN EXTINCTION</strong>
+            </div>
+            <ul>
+                <li><strong>Theme Dependence:</strong> Value depends entirely on chameleon/adaptation meme popularity</li>
+                <li><strong>Community Reliance:</strong> Success requires sustained community engagement</li>
+                <li><strong>Viral Nature:</strong> Popularity may fade as quickly as it appeared</li>
+                <li><strong>No Business Model:</strong> No underlying revenue or business operations</li>
+                <li><strong>Adaptive Features:</strong> Any "adaptive" mechanics are cosmetic and experimental</li>
+                <li><strong>Evolution Risk:</strong> Token functionality may change or disappear entirely</li>
+                <li><strong>Environmental Dependency:</strong> Success tied to broader crypto market conditions</li>
+            </ul>
+
+            <h2>🚫 No Financial Promises or Guarantees</h2>
+            <p><strong>Chameleon Cash makes NO representations or warranties about:</strong></p>
+            <ul>
+                <li>Future token value, price appreciation, or market performance</li>
+                <li>Investment returns, profitability, or financial gains</li>
+                <li>Market stability, liquidity, or trading volumes</li>
+                <li>Continued operation of adaptive intelligence features</li>
+                <li>Platform availability, functionality, or technical support</li>
+                <li>Community growth, engagement, or participation levels</li>
+                <li>Integration with other platforms, exchanges, or services</li>
+            </ul>
+
+            <h2>🌍 Regulatory & Legal Compliance</h2>
+            <ul>
+                <li><strong>Local Law Compliance:</strong> Users must research and comply with local regulations</li>
+                <li><strong>Regulatory Uncertainty:</strong> Crypto regulations are evolving and unpredictable</li>
+                <li><strong>No Legal Advice:</strong> We provide no legal, regulatory, or compliance guidance</li>
+                <li><strong>Restricted Jurisdictions:</strong> May be prohibited in certain locations</li>
+                <li><strong>Tax Implications:</strong> Users responsible for understanding tax obligations</li>
+                <li><strong>KYC/AML:</strong> Compliance requirements may apply through third-party services</li>
+            </ul>
+
+            <h2>🛡️ Technical & Platform Limitations</h2>
+            <p><strong>Technology and operational risks include:</strong></p>
+            <ul>
+                <li><strong>Smart Contract Risk:</strong> Potential code vulnerabilities or exploits</li>
+                <li><strong>Network Dependency:</strong> Reliance on Polygon network stability</li>
+                <li><strong>Platform Downtime:</strong> Adaptive intelligence feed may experience interruptions</li>
+                <li><strong>Third-Party Risk:</strong> Dependencies on external APIs and services</li>
+                <li><strong>No Technical Support:</strong> Limited or no customer service available</li>
+                <li><strong>Browser Compatibility:</strong> Site features may not work on all devices</li>
+                <li><strong>Data Accuracy:</strong> News feeds and market data may be delayed or incorrect</li>
+            </ul>
+
+            <h2>🎯 Personal Responsibility & Acknowledgment</h2>
+            <div class="adaptive-box">
+                <strong>🌈 BY PARTICIPATING, YOU ADAPT TO THESE REALITIES:</strong>
+            </div>
+            <ul>
+                <li>You understand CHCX is entertainment, not investment</li>
+                <li>You can afford to lose 100% of any money spent on CHCX</li>
+                <li>You have not relied on our content as investment advice</li>
+                <li>You accept full responsibility for your financial decisions</li>
+                <li>You understand all risks, limitations, and disclaimers above</li>
+                <li>You will not hold Chameleon Cash creators liable for any losses</li>
+                <li>You participate voluntarily and at your own risk</li>
+            </ul>
+
+            <h2>📜 Legal Disclaimers & Limitations</h2>
+            <ul>
+                <li><strong>No Liability:</strong> Chameleon Cash creators accept zero liability for any losses</li>
+                <li><strong>Use at Own Risk:</strong> All participation is entirely at your own risk</li>
+                <li><strong>No Partnership:</strong> No business or investment relationship is created</li>
+                <li><strong>Terms Subject to Change:</strong> These disclaimers may be updated without notice</li>
+                <li><strong>Severability:</strong> If any provision is invalid, others remain in effect</li>
+                <li><strong>No Warranties:</strong> Platform provided "as is" without any warranties</li>
+            </ul>
+
+            <h2>🎪 Age, Capacity & Eligibility Requirements</h2>
+            <ul>
+                <li>Must be 18+ years old to participate in any capacity</li>
+                <li>Must have legal capacity to understand and accept these terms</li>
+                <li>Must not be from jurisdictions where crypto participation is prohibited</li>
+                <li>Must understand cryptocurrency technology and associated risks</li>
+                <li>Must be participating for entertainment purposes only</li>
+            </ul>
+
+            <div class="evolution-box">
+                <h3 style="color: #a855f7; margin-bottom: 1rem;">🦎 Remember: Adaptation is About Survival, Not Profit!</h3>
+                <p><strong>Chameleon Cash celebrates the power of adaptation, evolution, and community. Like a chameleon changes colors to survive, we adapt to bring joy and education to the crypto space. Participate for the entertainment, engage with adaptive intelligence content, enjoy the color-shifting experience, and learn about market psychology - but never risk money you can't afford to lose completely!</strong></p>
+                <p style="margin-top: 1rem;"><strong>🌈 "Change is the only constant - embrace it for growth, not for gains."</strong></p>
+            </div>
         </div>
-    </main>
+
+        <div class="back-button">
+            <a href="index.html" class="back-btn">🦎 Back to Adaptive Intelligence</a>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- About Section -->
-        <div style="background: rgba(34, 197, 94, 0.1); border: 2px solid #22c55e; border-radius: 15px; padding: 2rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-            <h3 style="color: #a855f7; text-align: center; margin-bottom: 1rem; font-size: 1.4rem;">About Chameleon Cash</h3>
-            <div style="font-size: 1.1rem; line-height: 1.6; color: #E8F5E8; text-align: center;">
-                <strong style="color: #a855f7;">Chameleon Cash (CHCX)</strong> is the adaptive meme coin that changes with market conditions. Like a chameleon, it evolves and adapts to thrive in any environment, representing the power of flexibility and transformation in the crypto space.
-            </div>
-        </div>
-        
         <div class="footer-links">
-            <a href="#home">Home</a>
+            <a href="index.html">Home</a>
             <a href="#adaptive-intelligence">Adaptive Intelligence</a>
             <a href="#chameleon-wisdom">Chameleon Wisdom</a>
             <a href="#token-info">CHCX Token</a>
@@ -739,435 +604,21 @@
         </div>
         
         <div class="disclaimer">
-            🎭 ENTERTAINMENT TOKEN - Chameleon Cash (CHCX) is a fun meme token created for entertainment and community enjoyment. 
-            This website and token are for entertainment purposes only and not intended as financial advice. 
-            Cryptocurrencies are inherently volatile - please research thoroughly and only participate with funds you can afford to lose. 
-            Our "adapt to survive" philosophy is part of the entertainment theme. Always make informed decisions! 🦎🌈
+            🦎 CHCX is for entertainment only. Extreme risk of total loss. Not financial advice. 18+ only.
         </div>
         
-        <div class="footer-quote">
-            "The chameleon changes color to adapt, but never loses its essence."
+        <div class="copyright">
+            © 2025 Chameleon Cash (CHCX). All rights reserved.
         </div>
         
-        <div style="color: #ccc; font-size: 0.9rem;">
-            © 2025 Chameleon Cash • Built for adaptive crypto enthusiasts with 🌈 vision
+        <div class="community-message">
+            Built with 🌈 for adaptive crypto enthusiasts
+        </div>
+        
+        <div style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.6;">
+            <strong>Last Updated:</strong> July 25, 2025<br>
+            <em>This disclaimer is provided for informational purposes and does not constitute legal advice. Consult qualified professionals for financial and legal guidance.</em>
         </div>
     </footer>
-
-    <script>
-        // 🚀 CHAMELEON CASH ADAPTIVE NEWS SYSTEM
-        console.log('🌈 Initializing Chameleon Cash Adaptive News Feed...');
-        
-        const CHAMELEON_NEWS_CONFIG = {
-            // Enhanced crypto RSS feeds - Top tier sources
-            rssFeeds: [
-                'https://cointelegraph.com/rss',
-                'https://decrypt.co/feed',
-                'https://www.coindesk.com/arc/outboundfeeds/rss/',
-                'https://cryptonews.com/rss.xml',
-                'https://blockworks.co/rss.xml',
-                'https://bitcoinmagazine.com/feed',
-                'https://newsbtc.com/feed',
-                'https://cryptopotato.com/feed',
-                'https://news.bitcoin.com/feed'
-            ],
-            
-            proxyService: 'https://api.rss2json.com/v1/api.json?rss_url=',
-            cacheTimeout: 10 * 60 * 1000, // 10 minutes
-            
-            // Chameleon-themed fallback news
-            fallbackNews: [
-                {
-                    title: "🌈 Chameleon Cash: The Adaptive Advantage in Crypto",
-                    content: "In the ever-changing world of cryptocurrency, adaptation is survival. Chameleon Cash represents the evolution of meme tokens, changing colors with market conditions while maintaining core strength...",
-                    publishedAt: new Date().toISOString(),
-                    source: "Adaptive Intelligence",
-                    url: "#",
-                    chameleonWisdom: "Adaptation is the key to survival in any market"
-                },
-                {
-                    title: "🦎 Polygon Ecosystem Evolves with Adaptive Token Innovation",
-                    content: "The Polygon network continues to attract innovative projects that adapt to market conditions. Chameleon Cash leads this evolution with its color-shifting approach to tokenomics...",
-                    publishedAt: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(),
-                    source: "DeFi Evolution",
-                    url: "#",
-                    chameleonWisdom: "Evolution never stops - neither should your strategy"
-                },
-                {
-                    title: "🌈 Meme Token Metamorphosis: From Static to Adaptive",
-                    content: "The meme token sector is undergoing a transformation, with projects like Chameleon Cash leading the charge toward adaptive, environment-responsive tokenomics that change with market conditions...",
-                    publishedAt: new Date(Date.now() - 4 * 60 * 60 * 1000).toISOString(),
-                    source: "Crypto Evolution",
-                    url: "#",
-                    chameleonWisdom: "Change is opportunity in disguise"
-                },
-                {
-                    title: "🎨 Color-Shifting Tokens Gain Academic Recognition",
-                    content: "Behavioral economists are studying adaptive token mechanisms as legitimate market evolution tools, with Chameleon Cash's color-shifting philosophy representing a new paradigm in crypto psychology...",
-                    publishedAt: new Date(Date.now() - 6 * 60 * 60 * 1000).toISOString(),
-                    source: "Academic Research",
-                    url: "#",
-                    chameleonWisdom: "Smart money follows evolutionary patterns"
-                },
-                {
-                    title: "🚀 Uniswap DEX Embraces Adaptive Token Innovation",
-                    content: "Decentralized exchanges are witnessing increased volume in adaptive tokens that respond to market conditions, with Chameleon Cash's transformative approach attracting attention from institutional traders...",
-                    publishedAt: new Date(Date.now() - 8 * 60 * 60 * 1000).toISOString(),
-                    source: "DEX Analytics",
-                    url: "#",
-                    chameleonWisdom: "The future adapts to those who adapt first"
-                }
-            ]
-        };
-
-        let chameleonNewsCache = [];
-        let lastChameleonUpdate = 0;
-        let isLoadingChameleonNews = false;
-
-        // Chameleon-style emojis for news titles
-        const chameleonEmojiMap = {
-            'bitcoin': '₿',
-            'ethereum': '⟠',
-            'polygon': '🔷',
-            'defi': '🏦',
-            'trading': '📊',
-            'market': '💹',
-            'price': '💰',
-            'pump': '🚀',
-            'surge': '📈',
-            'gain': '🌈',
-            'profit': '💵',
-            'bull': '🐂',
-            'bear': '🐻',
-            'moon': '🌙',
-            'diamond': '💎',
-            'hands': '🙌',
-            'hodl': '💪',
-            'breakout': '🔥',
-            'news': '📰',
-            'update': '📢',
-            'launch': '🚀',
-            'new': '✨',
-            'change': '🌈',
-            'adapt': '🦎',
-            'evolve': '🎨',
-            'transform': '🌟'
-        };
-
-        // Main Chameleon news loading function
-        async function loadChameleonNews() {
-            if (isLoadingChameleonNews) return;
-            isLoadingChameleonNews = true;
-            
-            const newsContainer = document.getElementById('newsContainer');
-            if (!newsContainer) {
-                isLoadingChameleonNews = false;
-                return;
-            }
-
-            console.log('🦎 Chameleon adapting to market conditions...');
-            showChameleonLoading(true);
-
-            try {
-                const now = Date.now();
-                if (chameleonNewsCache.length > 0 && (now - lastChameleonUpdate) < CHAMELEON_NEWS_CONFIG.cacheTimeout) {
-                    console.log('🌈 Using cached adaptive intelligence');
-                    displayChameleonNews(chameleonNewsCache);
-                    showChameleonLoading(false);
-                    isLoadingChameleonNews = false;
-                    return;
-                }
-
-                const freshNews = await fetchChameleonMarketIntel();
-                
-                if (freshNews && freshNews.length > 0) {
-                    chameleonNewsCache = freshNews;
-                    lastChameleonUpdate = now;
-                    displayChameleonNews(freshNews);
-                    console.log('✅ Chameleon adaptive intelligence updated!');
-                    showChameleonMessage('🌈 Fresh adaptive intelligence from market evolution!', 'success');
-                } else {
-                    throw new Error('Adaptive intelligence temporarily unavailable');
-                }
-
-            } catch (error) {
-                console.warn('⚠️ Using Chameleon backup intelligence:', error);
-                displayChameleonNews(CHAMELEON_NEWS_CONFIG.fallbackNews);
-                showChameleonMessage('🦎 Using Chameleon backup intelligence - refresh for live data', 'info');
-            }
-
-            showChameleonLoading(false);
-            isLoadingChameleonNews = false;
-        }
-
-        // Fetch fresh market intelligence
-        async function fetchChameleonMarketIntel() {
-            const allIntel = [];
-            
-            for (const rssUrl of CHAMELEON_NEWS_CONFIG.rssFeeds) {
-                try {
-                    console.log(`🔍 Chameleon adapting to ${extractChameleonSource(rssUrl)}...`);
-                    const articles = await fetchFromChameleonSource(rssUrl);
-                    
-                    if (articles && articles.length > 0) {
-                        allIntel.push(...articles);
-                        console.log(`🌈 Acquired ${articles.length} adaptive reports from ${extractChameleonSource(rssUrl)}`);
-                    }
-                } catch (error) {
-                    console.warn(`❌ Adaptation failed for ${rssUrl}:`, error);
-                    continue;
-                }
-            }
-
-            if (allIntel.length >= 2) {
-                return allIntel
-                    .filter(article => article.title && article.content)
-                    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
-                    .slice(0, 6)
-                    .map(article => ({
-                        ...article,
-                        title: addChameleonEmojis(article.title),
-                        content: cleanChameleonContent(article.content),
-                        chameleonWisdom: generateChameleonWisdom()
-                    }));
-            }
-
-            return null;
-        }
-
-        // Fetch from individual Chameleon intelligence source
-        async function fetchFromChameleonSource(rssUrl) {
-            const proxyUrl = `${CHAMELEON_NEWS_CONFIG.proxyService}${encodeURIComponent(rssUrl)}`;
-            
-            try {
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 12000);
-                
-                const response = await fetch(proxyUrl, {
-                    signal: controller.signal,
-                    method: 'GET',
-                    headers: { 'Accept': 'application/json' }
-                });
-                
-                clearTimeout(timeoutId);
-
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-
-                const data = await response.json();
-                
-                if (data.status !== 'ok' || !data.items || !Array.isArray(data.items)) {
-                    throw new Error('Invalid adaptive intelligence data format');
-                }
-
-                return data.items
-                    .filter(item => {
-                        if (!item.title) return false;
-                        const title = item.title.toLowerCase();
-                        const desc = (item.description || '').toLowerCase();
-                        
-                        return title.includes('crypto') || title.includes('bitcoin') ||
-                               title.includes('ethereum') || title.includes('defi') ||
-                               title.includes('token') || title.includes('trading') ||
-                               title.includes('market') || title.includes('blockchain') ||
-                               desc.includes('cryptocurrency') || desc.includes('digital asset');
-                    })
-                    .slice(0, 3)
-                    .map(item => ({
-                        title: item.title,
-                        content: stripHtml(item.description || item.content || '').substring(0, 180) + '...',
-                        publishedAt: item.pubDate,
-                        source: extractChameleonSource(rssUrl),
-                        url: item.link || '#'
-                    }));
-
-            } catch (error) {
-                console.error(`Chameleon adaptation error for ${rssUrl}:`, error);
-                return [];
-            }
-        }
-
-        // Chameleon-style utility functions
-        function addChameleonEmojis(title) {
-            if (!title) return '';
-            
-            const lowerTitle = title.toLowerCase();
-            for (const [keyword, emoji] of Object.entries(chameleonEmojiMap)) {
-                if (lowerTitle.includes(keyword) && !title.includes(emoji)) {
-                    return `${emoji} ${title}`;
-                }
-            }
-            return `🦎 ${title}`;
-        }
-
-        function generateChameleonWisdom() {
-            const wisdoms = [
-                "Adaptation is the ultimate survival strategy",
-                "Change colors, keep your core strong",
-                "The market rewards those who evolve",
-                "Flexibility beats rigidity every time",
-                "Like a chameleon, blend with conditions",
-                "Evolution never stops - neither should you",
-                "Smart money follows adaptive patterns",
-                "Change is opportunity in disguise",
-                "Survival belongs to the adaptable",
-                "Transform with the market, not against it"
-            ];
-            return wisdoms[Math.floor(Math.random() * wisdoms.length)];
-        }
-
-        function stripHtml(html) {
-            if (!html) return '';
-            const div = document.createElement('div');
-            div.innerHTML = html;
-            return div.textContent || div.innerText || '';
-        }
-
-        function cleanChameleonContent(content) {
-            if (!content) return 'Adaptive intelligence available - click to evolve...';
-            return stripHtml(content).substring(0, 160) + '...';
-        }
-
-        function extractChameleonSource(url) {
-            try {
-                const domain = new URL(url).hostname;
-                const name = domain.replace('www.', '').split('.')[0];
-                return name.charAt(0).toUpperCase() + name.slice(1);
-            } catch {
-                return 'Adaptive Intel';
-            }
-        }
-
-        function formatChameleonTime(dateString) {
-            try {
-                const date = new Date(dateString);
-                const now = new Date();
-                const diffInMinutes = Math.floor((now - date) / (1000 * 60));
-                
-                if (diffInMinutes < 60) {
-                    return `${Math.max(1, diffInMinutes)}m ago`;
-                } else if (diffInMinutes < 1440) {
-                    const hours = Math.floor(diffInMinutes / 60);
-                    return `${hours}h ago`;
-                } else {
-                    const days = Math.floor(diffInMinutes / 1440);
-                    return `${days}d ago`;
-                }
-            } catch {
-                return 'Live';
-            }
-        }
-
-        // Display Chameleon news with enhanced styling
-        function displayChameleonNews(newsArray) {
-            const newsContainer = document.getElementById('newsContainer');
-            if (!newsContainer) return;
-            
-            const newsHTML = newsArray.map((article, index) => `
-                <div class="news-item" onclick="openChameleonIntel('${article.url}')" 
-                     style="animation-delay: ${index * 0.15}s; opacity: 0; animation: fadeInNews 0.8s ease forwards;">
-                    <div class="news-header">
-                        <div class="news-title">${article.title}</div>
-                        <div class="news-time">${formatChameleonTime(article.publishedAt)}</div>
-                    </div>
-                    <div class="news-content">${article.content}</div>
-                    <div class="news-source">
-                        <div class="source-name">🦎 ${article.source}</div>
-                        <div class="chameleon-wisdom">"${article.chameleonWisdom || generateChameleonWisdom()}"</div>
-                    </div>
-                </div>
-            `).join('');
-            
-            newsContainer.innerHTML = newsHTML;
-        }
-
-        function showChameleonLoading(show) {
-            const newsContainer = document.getElementById('newsContainer');
-            if (!newsContainer) return;
-            
-            if (show) {
-                newsContainer.innerHTML = `
-                    <div class="loading-indicator">
-                        <div style="font-size: 3rem; margin-bottom: 1.5rem;">🦎</div>
-                        <div style="font-size: 1.4rem; margin-bottom: 0.8rem; color: #a855f7;">Chameleon Adapting to Market...</div>
-                        <div style="font-size: 1rem; opacity: 0.8;">Shifting colors to match market conditions...</div>
-                        <div style="font-size: 0.9rem; opacity: 0.6; margin-top: 0.8rem;">🌈 "Adaptation is the key to survival"</div>
-                    </div>
-                `;
-            }
-        }
-
-        function openChameleonIntel(url) {
-            if (url && url !== '#') {
-                window.open(url, '_blank', 'noopener,noreferrer');
-                showChameleonMessage('📖 Opening adaptive intelligence report!', 'success');
-            } else {
-                showChameleonMessage('🦎 Chameleon market insight - for entertainment only!', 'info');
-            }
-        }
-
-        // Enhanced refresh function
-        async function refreshNews() {
-            console.log('🔄 Chameleon adapting to fresh market conditions...');
-            
-            chameleonNewsCache = [];
-            lastChameleonUpdate = 0;
-            
-            const refreshBtn = document.querySelector('.refresh-btn');
-            if (refreshBtn) {
-                const originalText = refreshBtn.textContent;
-                refreshBtn.textContent = '🌈 Adapting...';
-                refreshBtn.disabled = true;
-                
-                setTimeout(() => {
-                    refreshBtn.textContent = originalText;
-                    refreshBtn.disabled = false;
-                }, 5000);
-            }
-            
-            await loadChameleonNews();
-        }
-
-        // Message system
-        function showChameleonMessage(message, type = 'success') {
-            const popup = document.createElement('div');
-            popup.className = `message-popup ${type}`;
-            popup.textContent = message;
-            document.body.appendChild(popup);
-            
-            setTimeout(() => popup.classList.add('show'), 100);
-            setTimeout(() => {
-                popup.classList.remove('show');
-                setTimeout(() => popup.remove(), 300);
-            }, 4000);
-        }
-
-        // Initialize Chameleon News System
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('🚀 Chameleon Cash Adaptive News System initializing...');
-            
-            // Load initial news
-            loadChameleonNews();
-            
-            // Auto-refresh every 15 minutes
-            setInterval(() => {
-                console.log('⏰ Chameleon auto-adaptation: gathering fresh intelligence...');
-                loadChameleonNews();
-            }, 15 * 60 * 1000);
-            
-            // Add some Chameleon flair to the page
-            setTimeout(() => {
-                showChameleonMessage('🌈 Welcome to Chameleon Cash - Where adaptation meets innovation!', 'success');
-            }, 1000);
-            
-            console.log('✅ CHAMELEON CASH ADAPTIVE NEWS SYSTEM FULLY OPERATIONAL!');
-            console.log('🦎 "Adapt, evolve, thrive" - Chameleon Philosophy');
-        });
-
-        // Global function assignments
-        window.refreshNews = refreshNews;
-        window.openChameleonIntel = openChameleonIntel;
-    </script>
 </body>
 </html>
